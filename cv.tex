@@ -1,0 +1,185 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{graphicx} 
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2.5pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{minipage}{0.15\textwidth}
+    \includegraphics[width=0.5\textwidth]{iitkgplogo.jpg} % Add your IIT Kharagpur logo image file here
+\end{minipage}
+\begin{minipage}{0.8\textwidth}
+    \begin{center}
+        \textbf{\Huge \scshape Gaurav Jain} \\ \vspace{1pt}
+        \small \href{mailto:jaingauravgj16@gmail.com}{\underline{Gmail}} $|$ 
+        \href{https://www.linkedin.com/in/gaurav-jain1601/}{\underline{Linkedin}} $|$ +91 7727847642
+    \end{center}
+\end{minipage}
+
+%-----------EDUCATION-----------
+\section{Education}
+\begin{tabularx}{\textwidth}{l @{\hspace{0.5cm}} X @{\hspace{0.5cm}} X @{\hspace{0.5cm}} l}
+\textbf{Year} & \textbf{Degree} & \textbf{Institute} & \textbf{CGPA/Percentage} \\
+2024 & Integrated M.Sc in Mathematics and Computing & Indian Institute of Technology \textit{} Kharagpur & \textbf{8.70 / 10.00} \\
+2019 & Class XII (CBSE) & Disha Delphi Public School & \textbf{91.8\%} \\
+2017 & Class X (CBSE) & St. Anthony's Sr. Sec. School & \textbf{10.00 / 10.00} \\
+\end{tabularx}
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+  \resumeSubheading
+  { Quantitative Analyst  	\(\mid\) Goldman Sachs  }{Jul 2024 -- Present }
+  \resumeItemListStart
+    \resumeItem{Designed and implemented a tail risk model for \textbf{Direct Commercial Real Estate Loans}, incorporating evolving collateral prices to trigger margin calls and modeling mortgage price shortfalls under severely stressed scenarios.}
+    \resumeItem{Developed a statistical and mathematical \textbf{fallback} model for \textbf{Private Equity Capital Call} deals which fail to pass through the bespoke model, reducing shortfall computation latency by \textbf{90\%} with minimal data requirements.}
+    \resumeItem{Built a multipath Monte Carlo simulation model on \textbf{Geometric Brownian Motion} to quantify expected tail risk shortfalls for \textbf{Indirect Commercial Real Estate} deals.}
+    \resumeItem{Developed a regression based model to compute hazard rates  in severely stressed tail scenarios using Trepp data.}
+  \resumeItemListEnd
+
+  
+\resumeSubheading
+  {Summer Analyst Intern    \(\mid\) Goldman Sachs   }{   Jun 2023 -- Aug 2023}
+  \resumeItemListStart
+    \resumeItem{Conducted in-depth analysis and visualization of \textbf{CMBS and CRE} price time series enhancing \textbf{OAS} calibration.}
+    \resumeItem{Implemented advanced statistical methods to \textbf{recalibrate OAS} time series, reducing discrepancies by over \textbf{30\%}.}
+
+
+  \resumeItemListEnd
+
+
+  %   \resumeSubheading
+  %     {AI/ML Intern \(\mid\) SVAYO by Infinitied Labs }{ May 2022 -- July 2022}
+  % \resumeItemListStart
+  %   \resumeItem{Generated inversions of real images into \textbf{StyleGAN's latent space} using \textbf{Hyperstyle} to modulate weight deltas}
+  %   \resumeItem{Crafted a \textbf{pseudo-StyleClip} generator; improved model latency using \textbf{PTI}, reducing max iterations by over \textbf{40\%}. }
+  % \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Intern \(\mid\) Pennsylvania State University          }{  May 2021 -- Jul 2021}
+  \resumeItemListStart
+    \resumeItem{Identified and analyzed \textbf{30+} human trafficking hashtags, scraping and visualizing metadata with \textbf{Matplotlib}.}
+    \resumeItem{Launched a live Twitter campaign reaching \textbf{10k+} users, enhancing engagement and boosting awareness.}
+  \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Enhancing Permissioned Blockchain Security for Smart Neighborhoods}}{Oct 2023 -- May 2024}
+      \resumeItemListStart
+        \resumeItem{Implemented cryptographic \textbf{accumulators} to enhanced \textbf{ring signature} algorithm  for fine-grained access control}
+        \resumeItem{Developed scalable blockchain architecture using \textbf{CP-ABE} \& \textbf{smart contracts} for efficient resource management.}
+      \resumeItemListEnd
+      
+    \resumeProjectHeading
+      {\textbf{Assessment of Synergy in Human v. Machine Visuospatial Problem Solving}}{Jan 2021 -- May 2022}
+      \resumeItemListStart
+        \resumeItem{Built a website to play the classic sliding puzzle game, deployed on \textbf{Heroku}, and integrated with \textbf{Firebase}}
+        \resumeItem{Developed an AI solver using \textbf{IDA*} search algorithm and analyzed with \textbf{mango metric} analysis.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%-----------AWARDS AND ACHIEVEMENTS-----------
+\section{Awards and Achievements}
+  \resumeItemListStart
+    \resumeItem{Achieved a AIR of \textbf{1117 and 430} in JEE Advanced and  Mains 2019 out of \textbf{236K and 945k} students respectively.}
+    \resumeItem{Cleared \textbf{KVPY - SA Stream} - 2017 (\textbf{AIR 287}), \textbf{National Standard Examination in Chemistry} (2018) and \textbf{National Talent Search Examination} (2017), showcasing consistent academic excellence.}
+    \resumeItem{\textbf{Expert} in codeforces with rating 1625 and a global codeforces contest rank under \textbf{1600} among \textbf{3.5 lakh+} users.}
+    \resumeItem{Top ranks in contests like Google Kickstart \textbf{(600/8K+)}, Overnite \textbf{(2nd/400+)}, \& Source Code \textbf{(2nd/700+)}}
+  \resumeItemListEnd
+\section{Technical Skills \& Coursework}
+\begin{tabularx}{\textwidth}{X @{\hspace{0.5cm}} X}
+\textbf{Languages:} C, C++, Python, Matlab, Slang & \textbf{Libraries:} Pandas, PyTorch, OpenCV, SecDB \\
+\end{tabularx}
+\textbf{Relevant coursework:} Stochastic Processes in Finance, Linear Algebra, Financial Markets by Yale University, Graphical and Generative Models for Machine Learning, OS, DBMS, Object-Oriented System Design  \\
+% \end{tabularx}
+
+%-----------COMPETITION/CONFERENCE-----------
+\section{Competition/Conference}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vice Captain \(\mid\) Inter Hall Data Analytics 2021-22 \(\mid\) IIT Kharagpur \(\mid\) \textbf{Gold} }{Feb 2022 -- March 2022}
+      \resumeItemListStart
+        \resumeItem{Secured \textbf{1st place} among 18 teams and presented the final report to judges from Nihilent technologies}
+        \resumeItem{Achieved a \textbf{MAPE metric of 35\%} by creating an ensembled neural network of various ML and statistical models}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}
